@@ -1,0 +1,263 @@
+section {
+
+   height: 100%;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+
+}
+
+main {
+   height: 100%;
+}
+
+body {
+   color: #fff;
+}
+
+body,
+html {
+   height: 100%;
+   margin: 0;
+}
+
+.section-main {
+   display: flex;
+   justify-content: center;
+   /*yatayda ortalama*/
+   align-items: center;
+   /*dikeyde ortalama*/
+   background-image: url("../images/main.jpg");
+   height: 100%;
+   text-align: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+.section-main h1 {
+   background-position: center;
+   font-size: 90px;
+   margin: 0;
+}
+
+.section-gallery {
+   height: 100%;
+   background-image: url("../images/gallery.jpg");
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+.section-about {
+   background-image: url("../images/about.png");
+   max-height: 100%;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   margin: 0;
+}
+
+
+.menu {
+   position: fixed;
+   width: 100%;
+   margin: top 50px;
+}
+
+.menu-scroll {
+   background-color: #00b43d;
+}
+
+.menu ul {
+   font-size: 32px;
+   margin: 0;
+   margin-top: 5%;
+   padding: 0;
+   display: flex;
+   width: 100%;
+   justify-content: space-around;
+   transition: all 0.3s; /*aniden değilde yumuşak geçişler*/
+}
+
+/*menü tasarımını yan yana aralıklı yapmak için flex özelliklerinden bakarak yaptık*/
+
+
+.menu ul li {
+   list-style: none;
+}
+
+.menu ul li a {
+   margin: 0;
+   text-decoration: none;
+   color: #acabab;
+}
+
+
+.menu ul li a:hover {
+   text-decoration: underline;
+}
+
+/* üstüne gelince altını çizer*/
+
+.section-main .sub
+
+/*direkt travel'ın altındakı yazıyı hedef alıyo */
+   {
+   justify-content: center;
+   /* hero kısmını ortalamak için usttekı dıv'e class verdık*/
+   align-items: center;
+   font-size: 24px;
+   max-width: 750px;
+}
+
+/*max width yaptıgımızda kucuk ekranlarda 
+ kaydırmalı olmuyor yazı kendını yatayda
+ oturtuyor*/
+.section-main .hero-button a {
+   display: flex;
+   width: 90px;
+   height: 60px;
+   padding: 100%;
+   color: aqua;
+}
+
+.section-main .hero-button {
+   text-decoration: none;
+   color: #fff;
+   background-color: #00b43d;
+   border-radius: 20px;
+   padding: 16px 28px;
+   width: 60px;
+   height: 15px;
+   justify-content: center;
+   align-items: center;
+   display: flex;
+   box-shadow: 0px 0px 15px;
+}
+
+.section-main .hero-button:hover {
+   color: #3bff7c;
+}
+
+.section-main .hero {
+   justify-items: center;
+   display: grid;
+
+   align-items: center;
+   gap: 30px;
+   text-align: center;
+}
+
+.section-gallery {
+   background-image: url("../images/gallery.jpg");
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 1920px 1024px;
+}
+
+.section-gallery .galleryphotos {
+   width: 141px;
+   height: 150px;
+   border-radius: 5px;
+}
+
+.card img {
+   justify-content: center;
+   width: 137px;
+   height: 151px;
+   border-radius: 5px;
+}
+
+.section-gallery .cards {
+   padding: 10px;
+   padding-right: 40px;
+   padding-top: 120px;
+   box-sizing: border-box;
+   margin: auto;
+}
+
+.card {
+   background-color: rgb(150 136 136);
+   padding: 55px;
+   border-radius: 5px;
+   max-width: 600px;
+   margin: auto;
+   height: 280px;
+   display: flex;
+   flex-flow: column;
+}
+
+.card .card-desc {
+   max-width: 151px;
+}
+
+.card .card-content {
+   width: 140px;
+   display: flex;
+   padding: 5px;
+   flex-flow: column;
+   gap: 6px;
+}
+
+.card .card-tittle {
+   font: size 24px;
+}
+
+.card .readmore {
+   padding: 5px;
+   border-radius: 8px;
+   background-color: beige;
+   text-align: center;
+   width: 72px;
+}
+
+a {
+   text-decoration: none;
+}
+
+.section-gallery .galleryphotos {
+   display: flex;
+   gap: 15px;
+}
+
+.section {
+   padding: 40px;
+   box-sizing: border-box;
+}
+
+.section-gallery h2 {
+   margin: 0;
+   font-size: 30px;
+   line-height: 4px;
+}
+
+.section-about>div {
+   font-size: 22px;
+   padding-left: 10%;
+   line-height: 34px;
+   padding-top: 6%;
+}
+
+.section-about .about-text {
+   max-width: 900px;
+}
+
+html {
+   scroll-behavior: smooth;
+}
+
+@media only screen and (max-width: 720px) {
+   h2 {
+      text-align: center;
+   }
+
+}
+
+/*Baslangıc 12:30*/
+/*<button onclick=document.getElementById('home').innerHTML=Date(); >     butona basınca tarıh gelır
+ <button onclick=document.write('java')>  tıklayınca herşeyi silip java yazar ekrana
+ 
+ <button type="button" button onclick=alert('Uyarı')> tıklayınca butona ekrana uyarı kutucugu cıkar>
+  <button type="button" button onclick=console.log('Uyarı') >  tıklayınca konsolda uyarı yazar arkaplanda gorunur herkes gormez
+   <button type="button" onclick="document.getElementById('id si ').style='display:none'"      stiline etkiedebiliyon>*/
